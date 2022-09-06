@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Firi-API.t
+lib/Firi/API.pm

@@ -1,0 +1,6 @@
+Revision history for Perl extension Firi::API.
+
+0.01  Wed Dec 22 18:47:13 2021
+	- original version; created by h2xs 1.23 with options
+		-AX -n Firi::API
+
