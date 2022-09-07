@@ -14,7 +14,7 @@ Examples:
 use Firi::API;
 
 # Create a new API object.
-my $api = Miraiex::API->new( apikey => <api_access_key>);
+my $api = Firi::API->new( apikey => <api_access_key>);
 
 my %data =  ( market => "btcnok", count => 100 );
 my $result = $api->market_trade_history(%data); 
