@@ -11,6 +11,8 @@ URL: https://www.firi.com
 
 Examples:
 ```
+use Firi::API;
+
 # Create a new API object.
 my $api = Miraiex::API->new( apikey => <api_access_key>);
 
