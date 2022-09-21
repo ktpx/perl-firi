@@ -20,7 +20,7 @@ package Firi::API;
 #           
 ##
 
-our $VERSION = '2021.12.22';
+our $VERSION = '2022.09.21';
 
 use LWP::UserAgent;
 use JSON::XS;
@@ -298,9 +298,15 @@ sub market_depth {
    } 
    else {
      my $market = $params{'market'};
-     $result =  $self->get_pub("/v2/markets/$market/depth");
+     my $url = "/v2/markets/$market/depth";
+
+     if (exists $params{'asks'} ||
+         exists $params{'bids'}) {
+       my $query = URI::Query->new(%params);
+       $url = "$url?" . "$query";
+     }  
+     $result = $self->get_pub($url);
    }
- 
    return $result;
 }
    
