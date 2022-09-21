@@ -11,13 +11,26 @@ URL: https://www.firi.com
 
 Examples:
 ```
-my $api = Miraiex::API->new( apikey => <api_access_key>);
-```
-```
-my $result = $api->market_trade_history( market => $market,
-                                          count => $count );
-                                            
+use Firi::API;
+
+# Create a new API object.
+my $api = Firi::API->new( apikey => <api_access_key>);
+
+my %data =  ( market => "btcnok", count => 100 );
+my $result = $api->market_trade_history(%data); 
+                                                                                     
 my $result = get_balances();
+
+...
+
+     my %body = (
+          'market' => $market,
+          'type'   => $side,      # bid / ask
+          'price'  => $price,
+          'amount' => $amount,
+     );
+
+     my $result = $api->create_order(%body);
 
 ```
 
