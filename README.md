@@ -82,6 +82,4 @@ Tip Jar
 
 [![BTC Tip Jar](https://img.shields.io/badge/BTC-tip-yellow.svg?logo=bitcoin&style=flat)](https://www.blockchain.com/btc/address/bc1q4n6ny3qea3lg687n5dr92a607q4gxfvct4tl2v) `bc1q4n6ny3qea3lg687n5dr92a607q4gxfvct4tl2v`
 
-[![ETH Tip Jar](https://img.shields.io/badge/ETH-tip-blue.svg?logo=ethereum&style=flat)](https://etherscan.io/address/0xA54cFB231Bf07dA327Deeba9c6fff04CE78dA571) `0xA54cFB231Bf07dA327Deeba9c6fff04CE78dA571`
-
 Licence: GPLv3
